@@ -21,5 +21,5 @@ app.get('/hobbies/:id', async (req, res) => {
         res.status(404).send("Hobby not found");
         return;
     }
-    res.send();
+    res.send(hobby);
 })
